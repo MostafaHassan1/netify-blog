@@ -41,7 +41,7 @@
 
           </ul>
         </section>
-        @if (auth())
+        @if (auth()->user()!=null)
       <a class="btn btn-xs btn-round btn-success" href="{{ route('home') }}">Hi {{auth()->user()->name}}</a>
         @else
             
